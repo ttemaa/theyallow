@@ -1,0 +1,40 @@
+.navigation {
+  padding-bottom: 5px;
+  ul {
+    display: flex;
+    list-style: none;
+    background-color: $color-primary;
+    box-shadow: -4px -4px 0 rgba($color-primary, 0.27),
+      -8px -8px 0 rgba($color-primary, 0.27);
+    li {
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+      border-right: 1px solid #bbb;
+      &:last-child {
+        border-right: none;
+      }
+      img {
+        max-height: 20px;
+        margin-right: 5px;
+      }
+      a {
+        font-family: "Segoe WP", "Arial", sans-serif;
+        @include font($size: 1.8rem, $height: 1.8rem, $weight: 400);
+        text-decoration: none;
+        color: $color-additional;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@include media-laptop {
+  .navigation {
+    padding-bottom: 0px;
+    ul {
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+}

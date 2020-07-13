@@ -1,0 +1,55 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+
+  &__video {
+    max-height: 327px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    font-family: "Asap", "Arial", sans-serif;
+    @include font($size: 6.3rem, $height: 6.6rem, $weight: 400);
+
+    & span {
+      color: $color-primary;
+    }
+  }
+  &__arrow {
+    background: rgba($color-primary, 0.7);
+    img {
+      margin: 15px 10px;
+    }
+    &:hover {
+      background: $color-primary;
+    }
+  }
+  &__arrow:not(:first-of-type) {
+    margin-right: -0.5px;
+  }
+}
+
+@include media-laptop {
+  .slider {
+    padding: 0;
+    justify-content: center;
+    &__player {
+      width: 100%;
+      max-width: 640px;
+      max-height: 100%;
+    }
+    &__title {
+      display: none;
+    }
+    &__arrow {
+      display: none;
+    }
+  }
+}

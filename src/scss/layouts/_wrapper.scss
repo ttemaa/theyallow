@@ -1,0 +1,14 @@
+.website-wrapper {
+  width: 100%;
+  max-width: $desltop-width;
+  margin: auto;
+}
+.content-wrapper {
+  width: 100%;
+  max-width: $content-width;
+  margin: auto;
+}
+.intro-background-wrapper {
+  width: 100%;
+  background: url("../assets/img/header.png") center no-repeat;
+}

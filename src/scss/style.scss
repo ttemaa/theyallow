@@ -1,0 +1,27 @@
+@import "base/normalize";
+
+//Abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+
+//Base
+@import "base/fonts";
+@import "base/base";
+@import "base/logo";
+
+//Layouts
+@import "layouts/wrapper";
+
+@import "layouts/header";
+@import "layouts/footer";
+
+// Components
+
+@import "components/navigation";
+
+@import "components/slider";
+@import "components/advantages";
+
+@import "components/section-1";
+
+@import "components/section-2";
